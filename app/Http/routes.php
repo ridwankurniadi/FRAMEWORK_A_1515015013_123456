@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('pengguna/{pengguna}', function ($pengguna) {
+    return "Hello Word dari pengguna $pengguna";
+});
+Route::get('/public', function () {
+    return "Nama : Ridwan Kurniadi";
 });
