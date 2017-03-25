@@ -38,8 +38,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">NAMA : RIDWAN KURNIADI</div>
-                <div class="title">NIM : 1515015013</div>
+                <div class="title">Nama : Ridwan Kurniadi</div>
+                <div class="title">Nim : 1515015013</div>
             </div>
         </div>
     </body>
