@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charshet="UTF-8">		
-	<title>@yield('page_tittle','Halaman Awal') | Labolatorium Framework</title>
+	<title>@yield('page_tittle','Halaman Awal') | Pemerograman Framework</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('component/bootstrap/dist/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('component/font-awesome/css/font-awesome.min.css')}}">
 	<style type="text/css">
@@ -57,7 +57,9 @@
 						<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pengaturan <span class="caret"></span></a>
 						<ul class="dropdown-menu" aria-labelledby="dLabel">
 							<li><a href="{{url('pengguna')}}">Pengguna</a></li>
+							<li class="divider"></li>
 							<li><a href="{{url('ruangan')}}">Ruangan</a></li>
+							<li class="divider"></li>
 							<li><a href="{{url('matakuliah')}}">Matakuliah</a></li>
 						</ul>
 					</li>
@@ -68,7 +70,7 @@
 	</nav>
 	<div class="clearfix"></div>
 	<div class="container">
-		@if (Session::get('informasi'))
+		@if (Session::has('informasi'))
 		<div class="alert alert-info">
 			<strong>Informasi: </strong>{{Session::get('informasi')}}
 		</div>
@@ -77,7 +79,7 @@
 	</div>
 	<nav class="navbar navbar-default navbar-fixed-bottom">
 		<footer class="container">
-			created by <a href=""><span><i class="fa fa-facebook" style="color:#1daf12"></i>Ridwan Kurniadi</span></a>
+			created by <a href="https://www.facebook.com/hasyim.kimjurykhai"><span><i class="fa fa-facebook" style="color:#1daf12"></i>Hasyim Asyari</span></a>
 		</footer>
 	</nav>
 	<script type="text/javascript" src="{{asset('component/jquery/dist/jquery.min.js')}}"></script>

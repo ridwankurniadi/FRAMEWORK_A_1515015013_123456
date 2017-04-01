@@ -4,7 +4,7 @@
 
 <div class="panel panel-primary">
 <div class="panel-heading">
-	<strong><a href="{{ url('pengguna') }}">
+	<strong><a href="{{ url('Pengguna') }}">
 	<i style="color:white;" class="fa text-default fa-chevron-left"></i></a>
 	Tambah Data Pengguna</strong>
 	</div>

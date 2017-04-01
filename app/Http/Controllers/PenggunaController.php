@@ -22,7 +22,7 @@ public function simpan(Request $input)
 	$pengguna = new Pengguna();
 	$pengguna->username = $input->username;
 	$pengguna->password = $input->password;
-	$pengguna = $pengguna->save() ? 'Berhasil simpan data' : 'Gagal simpan data';
+	$informasi = $pengguna->save() ? 'Berhasil simpan data' : 'Gagal simpan data';
 	return redirect('pengguna')->with(['informasi'=>$informasi]);
 }
 public function edit($id)

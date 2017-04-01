@@ -124,7 +124,6 @@ return [
     'providers' => [
 
         Collective\Html\HtmlServiceProvider::class,
-
         
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
@@ -201,8 +200,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Form'=>Collective\Html\FormFocade::class,
-        'Html'=>Collective\Html\FormFocade::class,
+        'Form'=>Collective\Html\FormFacade::class,
+        'Html'=>Collective\Html\FormFacade::class,
+
 
     ],
 
