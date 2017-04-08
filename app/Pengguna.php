@@ -16,10 +16,10 @@ class Pengguna extends Model
 
 	public function dosen()
 	{
-		return $this_>hasOne(dosen::class);
+		return $this->hasOne(Dosen::class);
 	}
 	public function peran()
 	{
-		return $this_->belongToMany(peran::class);
+		return $this->belongsToMany(Peran::class);
 	}
 }

@@ -79,7 +79,7 @@
 	</div>
 	<nav class="navbar navbar-default navbar-fixed-bottom">
 		<footer class="container">
-			created by <a href="https://www.facebook.com/hasyim.kimjurykhai"><span><i class="fa fa-facebook" style="color:#1daf12"></i>Hasyim Asyari</span></a>
+			created by <a href="https://www.facebook.com/ridwan.kurniadi"><span><i class="fa fa-facebook" style="color:#1daf12"></i>Ridwan Kurniadi</span></a>
 		</footer>
 	</nav>
 	<script type="text/javascript" src="{{asset('component/jquery/dist/jquery.min.js')}}"></script>
