@@ -6,6 +6,8 @@ use App\dosen_matakuliah;
 use App\dosen;
 use App\matakuliah;
 use App\pengguna;
+use App\Http\Requests\DosenMatakuliahRequest;
+
 class Dosen_MatakuliahController extends Controller{
 protected $informasi = 'Gagal melakukan aksi';
 public function awal(){

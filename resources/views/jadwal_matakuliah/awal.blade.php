@@ -24,7 +24,7 @@
 		<td>{{ $x++ }}</td>
 		<td>{{ $jadwal->mahasiswa->nama or 'nama kosong'}}</td>
 		<td>{{ $jadwal->mahasiswa->nim or 'nim kosong' }}</td>
-		<td>{{ $jadwal->dosen_matakuliah->matakuliah->title or 'matakuliah kosong' }}</td>
+		<td>{{ $jadwal->dosen_matakuliah->matakuliah->tittle or 'matakuliah kosong' }}</td>
 		
 		<td>
 			<div class="btn-group" role="group">

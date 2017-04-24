@@ -7,6 +7,8 @@ use App\Jadwal_Matakuliah;
 use App\Mahasiswa;
 use App\Dosen_Matakuliah;
 use App\Ruangan;
+use App\Http\Requests\JadwalMatakuliahRequest;
+
 class Jadwal_MatakuliahController extends Controller
 {
     public function awal()

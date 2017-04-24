@@ -82,3 +82,21 @@ Route::get('jadwal_matakuliah/edit/{Jadwal_Matakuliah}','Jadwal_MatakuliahContro
 Route::post('jadwal_matakuliah/edit/{Jadwal_Matakuliah}','Jadwal_MatakuliahController@update');
 Route::get('jadwal_matakuliah/hapus/{Jadwal_Matakuliah}','Jadwal_MatakuliahController@hapus');
 Route::get('jadwal_matakuliah/lihat/{Jadwal_Matakuliah}','Jadwal_MatakuliahController@lihat');
+
+Route::get('/',function (Illuminate\Http\Request $request)
+{
+	echo "Ini adalah request dari method get ". $request->nama;
+});
+use Illuminate\Http\Request;
+Route::get('/',function ()
+	{
+		echo Form::open(['url'=>'/']).
+		Form::label('nama').
+		Form::text('nama',null).
+		Form::submit('kirim').
+		Form::close();
+	});
+Route::post('/',function (Request $request)
+{
+	echo "Hasil dari form input tadi nama : ".$request->nama;
+});

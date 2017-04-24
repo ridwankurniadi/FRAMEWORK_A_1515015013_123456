@@ -27,12 +27,12 @@ public function simpan(Request $input)
 public function edit($id)
 {
 	$ruangan = Ruangan::find($id);
-	return view ('ruangan.edit')->whith (array('ruangan'=>$ruangan));
+	return view ('ruangan.edit')->with (array('ruangan'=>$ruangan));
 }
 public function lihat($id)
 {
 	$ruangan = Ruangan::find($id);
-	return view ('ruangan.lihat')->whith(array('ruangan'=>$ruangan));
+	return view ('ruangan.lihat')->with(array('ruangan'=>$ruangan));
 }
 public function update($id, Request $input)
 {

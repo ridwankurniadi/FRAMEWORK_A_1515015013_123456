@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Dosen;
 use App\Pengguna;
+use App\Http\Requests\DosenRequest;
 
 class DosenController extends Controller
 {

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Pengguna;
+use App\Http\Requests\PenggunaRequest;
 
 class PenggunaController extends Controller
 {
@@ -19,6 +20,10 @@ public function tambah()
 }
 public function simpan(Request $input)
 {
+	$this->validate($input,[
+		'username'=>'required',
+		'password'=>'required',
+		]);
 	$pengguna = new Pengguna();
 	$pengguna->username = $input->username;
 	$pengguna->password = $input->password;
